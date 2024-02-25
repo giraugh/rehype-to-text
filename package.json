@@ -1,0 +1,18 @@
+{
+  "name": "rehype-to-text",
+  "version": "1.0.0",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "index.mjs"
+  ],
+  "exports": "./index.mjs",
+  "description": "Plugin that compiles a rehype AST to text using hast-util-to-text",
+  "main": "index.js",
+  "author": "giraugh",
+  "license": "MIT",
+  "dependencies": {
+      "hast-util-to-text": "^4.0.0",
+      "unified": "^11.0.4"
+  }
+}
