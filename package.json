@@ -1,18 +1,26 @@
 {
   "name": "rehype-to-text",
-  "version": "1.0.0",
+  "description": "Plugin that compiles a rehype AST to text using hast-util-to-text",
+  "version": "1.0.1",
+  "author": "giraugh",
+  "license": "MIT",
   "type": "module",
+  "main": "index.mjs",
+  "types": "index.d.mts",
   "sideEffects": false,
   "files": [
     "index.mjs"
   ],
+  "scripts": {
+    "build": "rimraf '*.d.mts' && tsc"
+  },
   "exports": "./index.mjs",
-  "description": "Plugin that compiles a rehype AST to text using hast-util-to-text",
-  "main": "index.js",
-  "author": "giraugh",
-  "license": "MIT",
   "dependencies": {
-      "hast-util-to-text": "^4.0.0",
-      "unified": "^11.0.4"
+    "hast-util-to-text": "^4.0.0",
+    "unified": "^11.0.4"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
   }
 }
